@@ -1,12 +1,35 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { ProfileCard } from './profile-card/profile-card';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
+  standalone: true,
+  imports: [ProfileCard],
   templateUrl: './app.html',
+  styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('my-first-app');
+  fullName = 'Ella Nicole Rivera';
+  location = 'San Fernando, Pampanga';
+  email = 'riveraent05@proton.me';
+  phone = '09XX XXX XXXX';
+
+  profile = 'I am a student interested in web development. I enjoy learning new technologies and building useful applications.';
+
+  skills = [
+    'HTML and CSS',
+    'JavaScript',
+    'Node',
+    'Angular',
+    'QA Testing',
+    'MongoDB'
+  ];
+
+  message = 'Welcome to my profile!';
+  clickCount = 0;
+
+  showMessage() {
+    this.clickCount++;
+    this.message = `You clicked the button ${this.clickCount} time(s).`;
+  }
 }

@@ -14,7 +14,7 @@ export class App {
   email = 'riveraent05@proton.me';
   phone = '09XX XXX XXXX';
 
-  profile = 'I am a student interested in web development. I enjoy learning new technologies and building useful applications.';
+  profile = 'I am a 3rd year Web Development student at Holy Angel University. Currently taking the Advanced Dynamic Web Applications Course to learn about Web Frameworks and other tools for front-end web development.';
 
   skills = [
     'HTML and CSS',
@@ -22,7 +22,9 @@ export class App {
     'Node',
     'Angular',
     'QA Testing',
-    'MongoDB'
+    'MongoDB',
+    'Vue',
+    'Express'
   ];
 
   message = 'Welcome to my profile!';

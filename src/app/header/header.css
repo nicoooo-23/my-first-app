@@ -1,0 +1,23 @@
+.intro {
+  text-align: center;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 22px;
+  margin-bottom: 28px;
+}
+
+.intro h1 {
+  margin-bottom: 4px;
+  color: #d9e1e8;
+  font-size: 2.2rem;
+}
+
+.intro p {
+  color: #d9e1e8;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .intro h1 {
+    font-size: 1.7rem;
+  }
+}
